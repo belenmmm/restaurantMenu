@@ -1,0 +1,586 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  
+
+}
+
+
+body{
+  width:100%;
+  font-family: 'Orelega One', cursive;
+  color:#cd0e24;
+  background-color: #f2a48e;
+}
+
+.h1{
+  font-size:55px;
+  padding-top:30px;
+}
+h2{
+  font-size:10px;
+  margin-top:-5px;
+}
+.texto > h2{
+  float:left;
+  text-align: left;
+}
+.texto > p{
+  float: left;
+    text-align: left;
+    font-size: 8px;
+    
+}
+
+.pixel61 > h2{
+ font-size: 6px;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.size > h2{
+  font-size: 8px;
+  margin-left: -6px;
+}
+
+
+
+.grid-container {
+  max-height: 100vh;
+  height:80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-template-areas:
+    "pixel pixel2 pixel3 pixel4 pixel5 pixel6 pixel7 pixel8 pixel9 pixel10 pixel11 pixel12 pixel13 pixel14 pixel15"
+    "foto1 foto1 foto1 foto1 foto1 foto1 pixel16 pixel1 pixel18 pixel19 pixel20 pixel21 pixel22 fotomini1 pixel23"
+    "foto1 foto1 foto1 foto1 foto1 foto1 pixel24 precio1 precio1 texto-1 texto-1 texto-1 texto-1 texto-1 pixel18pixel25"
+    "foto1 foto1 foto1 foto1 foto1 foto1 pixel26 pixel27 pixel28 texto-1 texto-1 texto-1 texto-1 texto-1 pixel29"
+    "foto1 foto1 foto1 foto1 foto1 foto1 pixel30 pixel31 pixel32 texto-1 texto-1 texto-1 texto-1 texto-1 pixel33"
+    "foto1 foto1 foto1 foto1 foto1 foto1 pixel34 pixel35 pixel36 foto-2 foto-2 foto-2 foto-2 foto-2 foto-2"
+    "precio2 precio2 texto-2 texto-2 texto-2 texto-2 texto-2 texto-2 texto-2 foto-2 foto-2 foto-2 foto-2 foto-2 foto-2"
+    "pixel37 pixel38 texto-2 texto-2 texto-2 texto-2 texto-2 texto-2 texto-2 foto-2 foto-2 foto-2 foto-2 foto-2 foto-2"
+    "pixel39 pixel40 texto-2 texto-2 texto-2 texto-2 texto-2 texto-2 texto-2 foto-2 foto-2 foto-2 foto-2 foto-2 foto-2"
+    "titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 pixel41 foto-2 foto-2 foto-2 foto-2 foto-2 foto-2"
+    "titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 pixel42 foto-2 foto-2 foto-2 foto-2 foto-2 foto-2"
+    "titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 pixel43 precio3 precio3 subtitulo-1 subtitulo-1 subtitulo-1 subtitulo-1"
+    "titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 titulo-1 pixel44 precio-4 precio-4 subtitulo-2 subtitulo-2 subtitulo-2 subtitulo-2"
+    "pixel45 pixel46 pixel47 pixel48 pixel49 pixel50 pixel51 pixel52 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3"
+    "precio-5 precio-5 texto-3 texto-3 texto-3 texto-3 texto-3 texto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3"
+    "pixel53 pixel54 texto-3 texto-3 texto-3 texto-3 texto-3 texto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3"
+    "pixel55 pixel56 texto-3 texto-3 texto-3 texto-3 texto-3 texto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3"
+    "foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 pixel57 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3"
+    "foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 pixel58 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3 foto-3"
+    "foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 pixel59 fotomini2 fotomini2 pixel61 subtitulo-3 subtitulo-3 subtitulo-3 subtitulo-3"
+    "foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 pixel60 fotomini2 fotomini2 pixel62 pixel63 pixel64 pixel65 pixel66"
+    "foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 texto-4 texto-4 texto-4 texto-4 texto-4 texto-4 texto-4 texto-4"
+    "foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 foto-4 texto-4 texto-4 texto-4 texto-4 texto-4 texto-4 texto-4 texto-4";
+}
+
+.grid-container > div{
+  overflow:hidden;
+}
+
+.pixel { grid-area: pixel; }
+
+.pixel2 { grid-area: pixel2; }
+
+.pixel3 { grid-area: pixel3; }
+
+.pixel4 { grid-area: pixel4; }
+
+.pixel5 { grid-area: pixel5; }
+
+.pixel6 { grid-area: pixel6; }
+
+.pixel7 { grid-area: pixel7; }
+
+.pixel8 { grid-area: pixel8; }
+
+.pixel9 { grid-area: pixel9; }
+
+.pixel10 { grid-area: pixel10; }
+
+.pixel11 { grid-area: pixel11; }
+
+.pixel12 { grid-area: pixel12; }
+
+.pixel13 { grid-area: pixel13; }
+
+.pixel14 { grid-area: pixel14; }
+
+.pixel15 { grid-area: pixel15; }
+
+.foto1 { grid-area: foto1; }
+
+.pixel16 { grid-area: pixel16; }
+
+.pixel1 { grid-area: pixel1; }
+
+.pixel18 { grid-area: pixel18; }
+
+.pixel19 { grid-area: pixel19; }
+
+.pixel20 { grid-area: pixel20; }
+
+.pixel21 { grid-area: pixel21; }
+
+.pixel22 { grid-area: pixel22; }
+
+.fotomini1 { grid-area: fotomini1; }
+
+.pixel23 { grid-area: pixel23; }
+
+.pixel24 { grid-area: pixel24; }
+
+.precio1 { grid-area: precio1; }
+
+.texto-1 { grid-area: texto-1; }
+
+.pixel18pixel25 { grid-area: pixel18pixel25; }
+
+.pixel26 { grid-area: pixel26; }
+
+.pixel27 { grid-area: pixel27; }
+
+.pixel28 { grid-area: pixel28; }
+
+.pixel29 { grid-area: pixel29; }
+
+.pixel30 { grid-area: pixel30; }
+
+.pixel31 { grid-area: pixel31; }
+
+.pixel32 { grid-area: pixel32; }
+
+.pixel33 { grid-area: pixel33; }
+
+.pixel34 { grid-area: pixel34; }
+
+.pixel35 { grid-area: pixel35; }
+
+.pixel36 { grid-area: pixel36; }
+
+.foto-2 { grid-area: foto-2; }
+
+.precio2 { grid-area: precio2; }
+
+.texto-2 { grid-area: texto-2; }
+
+.pixel37 { grid-area: pixel37; }
+
+.pixel38 { grid-area: pixel38; }
+
+.pixel39 { grid-area: pixel39; }
+
+.pixel40 { grid-area: pixel40; }
+
+.titulo-1 { grid-area: titulo-1; }
+
+.pixel41 { grid-area: pixel41; }
+
+.pixel42 { grid-area: pixel42; }
+
+.pixel43 { grid-area: pixel43; }
+
+.pixel44 { grid-area: pixel44; }
+
+.precio3 { grid-area: precio3; }
+
+.subtitulo-1 { grid-area: subtitulo-1; }
+
+.precio-4 { grid-area: precio-4; }
+
+.subtitulo-2 { grid-area: subtitulo-2; }
+
+.pixel45 { grid-area: pixel45; }
+
+.pixel46 { grid-area: pixel46; }
+
+.pixel47 { grid-area: pixel47; }
+
+.pixel48 { grid-area: pixel48; }
+
+.pixel49 { grid-area: pixel49; }
+
+.pixel50 { grid-area: pixel50; }
+
+.pixel51 { grid-area: pixel51; }
+
+.pixel52 { grid-area: pixel52; }
+
+.foto-3 { grid-area: foto-3; }
+
+.precio-5 { grid-area: precio-5; }
+
+.texto-3 { grid-area: texto-3; }
+
+.pixel53 { grid-area: pixel53; }
+
+.pixel54 { grid-area: pixel54; }
+
+.pixel55 { grid-area: pixel55; }
+
+.pixel56 { grid-area: pixel56; }
+
+.foto-4 { grid-area: foto-4; }
+
+.pixel57 { grid-area: pixel57; }
+
+.pixel58 { grid-area: pixel58; }
+
+.pixel59 { grid-area: pixel59; }
+
+.pixel60 { grid-area: pixel60; }
+
+.fotomini2 { grid-area: fotomini2; }
+
+.pixel61 { grid-area: pixel61; }
+
+.subtitulo-3 { grid-area: subtitulo-3; }
+
+.pixel62 { grid-area: pixel62; }
+
+.pixel63 { grid-area: pixel63; }
+
+.pixel64 { grid-area: pixel64; }
+
+.pixel65 { grid-area: pixel65; }
+
+.pixel66 { grid-area: pixel66; }
+
+.texto-4 { grid-area: texto-4; }
+
+.main-container{
+  text-align:center;
+    padding: 40px 20px 40px 20px;
+    background-color:#f2a48e;
+    overflow-y: hidden;
+}
+.main-container > .border:first-child{
+  margin-right:0;
+  margin-bottom:40px
+}
+.border {
+  background-color: #e9e6e1;
+  height:80vh;
+  display:inline-block;
+  width:100%;
+  vertical-align: middle;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.grid-container > div {
+  background-color: white;
+  padding: 10px;
+}
+
+ .grid-container2 > div {
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* second menu card */
+.grid-container2 {
+  max-height: 100vh;
+  height:80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-template-areas:
+    "_titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _titulo1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_pixel1 _pixel2 _pixel3 _pixxel4 _pixel5 _pixel6 _pixel7 _pixel8 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_pixel9 _precio1 _texto1 _texto1 _texto1 _texto1 _texto1 _texto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_pixel10 _pixel11 _texto1 _texto1 _texto1 _texto1 _texto1 _texto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_pixel12 _pixel13 _pixel14 _pixel15 _pixel16 _pixel17 _pixel18 _pixel19 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1 _foto1"
+    "_pixel20 _fotomini1 _foto2 _foto2 _foto2 _foto2 _foto2 _pixel21 _precio2 _texto2 _texto2 _texto2 _texto2 _texto2 _texto2"
+    "_pixel22 _pixel23 _foto2 _foto2 _foto2 _foto2 _foto2 _pixel24 _pixel25 _texto2 _texto2 _texto2 _texto2 _texto2 _texto2"
+    "_pixel26 _pixel27 _foto2 _foto2 _foto2 _foto2 _foto2 _pixel28 _pixel29 _pixel30 _pixel31 _pixel32 _pixel33 _pixel34 _pixel35"
+    "_pixel36 _pixel37 _foto2 _foto2 _foto2 _foto2 _foto2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _pixel38"
+    "_pixel39 _pixel40 _foto2 _foto2 _foto2 _foto2 _foto2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _pixel41"
+    "_pixel42 _pixel43 _foto2 _foto2 _foto2 _foto2 _foto2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _titulo2 _pixel44"
+    "_precio3 _precio3 _texto3 _texto3 _texto3 _texto3 _texto3 _texto3 _pixel45 _pixel46 _foto3 _foto3 _foto3 _foto3 _foto3"
+    "_pixel47 _pixel48 _texto3 _texto3 _texto3 _texto3 _texto3 _texto3 _pixel49 _pixel50 _foto3 _foto3 _foto3 _foto3 _foto3"
+    "_precio4 _precio4 _texto4 _texto4 _texto4 _texto4 _texto4 _texto4 _texto4 _pixel51 _foto3 _foto3 _foto3 _foto3 _foto3"
+    "_pixel52 _pixel53 _texto4 _texto4 _texto4 _texto4 _texto4 _texto4 _texto4 _pixel54 _foto3 _foto3 _foto3 _foto3 _foto3"
+    "_precio5 _precio5 _texto5 _texto5 _texto5 _texto5 _foto4 _foto4 _foto4 _foto4 _foto3 _foto3 _foto3 _foto3 _foto3"
+    "_precio6 _precio6 _texto5 _texto5 _texto5 _texto5 _foto4 _foto4 _foto4 _foto4 _precio7 _precio7 _pixel55 _pixel56 _pixel57"
+    "_precio8 _precio8 _subtitulo1 _subtitulo1 _subtitulo1 _subtitulo1 _foto4 _foto4 _foto4 _foto4 _texto6 _texto6 _texto6 _texto6 _pixel58"
+    "_precio9 _precio9 _subtitulo2 _subtitulo2 _pixel59 _pixel60 _foto4 _foto4 _foto4 _foto4 _texto6 _texto6 _texto6 _texto6 _pixel61"
+    "_precio10 _precio10 _subtitulo3 _subtitulo3 _subtitulo3 _pixel62 _foto4 _foto4 _foto4 _foto4 _texto6 _texto6 _texto6 _texto6 _pixel63"
+    "_pixel64 _pixel65 _pixel66 _pixel67 _pixel68 _pixel69 _pixel70 _pixel71 _pixel72 _pixel73 _pixel74 _pixel75 _pixel76 _pixel77 _pixel78";
+}
+
+._titulo1 { grid-area: _titulo1; }
+
+._foto1 { grid-area: _foto1; }
+
+._pixel1 { grid-area: _pixel1; }
+
+._pixel2 { grid-area: _pixel2; }
+
+._pixel3 { grid-area: _pixel3; }
+
+._pixxel4 { grid-area: _pixxel4; }
+
+._pixel5 { grid-area: _pixel5; }
+
+._pixel6 { grid-area: _pixel6; }
+
+._pixel7 { grid-area: _pixel7; }
+
+._pixel8 { grid-area: _pixel8; }
+
+._pixel9 { grid-area: _pixel9; }
+
+._precio1 { grid-area: _precio1; }
+
+._texto1 { grid-area: _texto1; }
+
+._pixel10 { grid-area: _pixel10; }
+
+._pixel11 { grid-area: _pixel11; }
+
+._pixel12 { grid-area: _pixel12; }
+
+._pixel13 { grid-area: _pixel13; }
+
+._pixel14 { grid-area: _pixel14; }
+
+._pixel15 { grid-area: _pixel15; }
+
+._pixel16 { grid-area: _pixel16; }
+
+._pixel17 { grid-area: _pixel17; }
+
+._pixel18 { grid-area: _pixel18; }
+
+._pixel19 { grid-area: _pixel19; }
+
+._pixel20 { grid-area: _pixel20; }
+
+._fotomini1 { grid-area: _fotomini1; }
+
+._foto2 { grid-area: _foto2; }
+
+._pixel21 { grid-area: _pixel21; }
+
+._precio2 { grid-area: _precio2; }
+
+._texto2 { grid-area: _texto2; }
+
+._pixel22 { grid-area: _pixel22; }
+
+._pixel23 { grid-area: _pixel23; }
+
+._pixel24 { grid-area: _pixel24; }
+
+._pixel25 { grid-area: _pixel25; }
+
+._pixel26 { grid-area: _pixel26; }
+
+._pixel27 { grid-area: _pixel27; }
+
+._pixel28 { grid-area: _pixel28; }
+
+._pixel29 { grid-area: _pixel29; }
+
+._pixel30 { grid-area: _pixel30; }
+
+._pixel31 { grid-area: _pixel31; }
+
+._pixel32 { grid-area: _pixel32; }
+
+._pixel33 { grid-area: _pixel33; }
+
+._pixel34 { grid-area: _pixel34; }
+
+._pixel35 { grid-area: _pixel35; }
+
+._pixel36 { grid-area: _pixel36; }
+
+._pixel37 { grid-area: _pixel37; }
+
+._titulo2 { grid-area: _titulo2; }
+
+._pixel38 { grid-area: _pixel38; }
+
+._pixel39 { grid-area: _pixel39; }
+
+._pixel40 { grid-area: _pixel40; }
+
+._pixel41 { grid-area: _pixel41; }
+
+._pixel42 { grid-area: _pixel42; }
+
+._pixel43 { grid-area: _pixel43; }
+
+._pixel44 { grid-area: _pixel44; }
+
+._precio3 { grid-area: _precio3; }
+
+._texto3 { grid-area: _texto3; }
+
+._pixel45 { grid-area: _pixel45; }
+
+._pixel46 { grid-area: _pixel46; }
+
+._foto3 { grid-area: _foto3; }
+
+._pixel47 { grid-area: _pixel47; }
+
+._pixel48 { grid-area: _pixel48; }
+
+._pixel49 { grid-area: _pixel49; }
+
+._pixel50 { grid-area: _pixel50; }
+
+._precio4 { grid-area: _precio4; }
+
+._texto4 { grid-area: _texto4; }
+
+._pixel51 { grid-area: _pixel51; }
+
+._pixel52 { grid-area: _pixel52; }
+
+._pixel53 { grid-area: _pixel53; }
+
+._pixel54 { grid-area: _pixel54; }
+
+._precio5 { grid-area: _precio5; }
+
+._texto5 { grid-area: _texto5; }
+
+._foto4 { grid-area: _foto4; }
+
+._precio6 { grid-area: _precio6; }
+
+._precio7 { grid-area: _precio7; }
+
+._pixel55 { grid-area: _pixel55; }
+
+._pixel56 { grid-area: _pixel56; }
+
+._pixel57 { grid-area: _pixel57; }
+
+._precio8 { grid-area: _precio8; }
+
+._subtitulo1 { grid-area: _subtitulo1; }
+
+._texto6 { grid-area: _texto6; }
+
+._pixel58 { grid-area: _pixel58; }
+
+._precio9 { grid-area: _precio9; }
+
+._subtitulo2 { grid-area: _subtitulo2; }
+
+._pixel59 { grid-area: _pixel59; }
+
+._pixel60 { grid-area: _pixel60; }
+
+._pixel61 { grid-area: _pixel61; }
+
+._precio10 { grid-area: _precio10; }
+
+._subtitulo3 { grid-area: _subtitulo3; }
+
+._pixel62 { grid-area: _pixel62; }
+
+._pixel63 { grid-area: _pixel63; }
+
+._pixel64 { grid-area: _pixel64; }
+
+._pixel65 { grid-area: _pixel65; }
+
+._pixel66 { grid-area: _pixel66; }
+
+._pixel67 { grid-area: _pixel67; }
+
+._pixel68 { grid-area: _pixel68; }
+
+._pixel69 { grid-area: _pixel69; }
+
+._pixel70 { grid-area: _pixel70; }
+
+._pixel71 { grid-area: _pixel71; }
+
+._pixel72 { grid-area: _pixel72; }
+
+._pixel73 { grid-area: _pixel73; }
+
+._pixel74 { grid-area: _pixel74; }
+
+._pixel75 { grid-area: _pixel75; }
+
+._pixel76 { grid-area: _pixel76; }
+
+._pixel77 { grid-area: _pixel77; }
+
+._pixel78 { grid-area: _pixel78; }
+
+@media only screen and (min-width: 768px) {
+  .h1{
+    font-size:100px;
+  }
+  h2{
+    font-size:20px;
+    margin-top:0;
+  }
+  .size > h2{
+    font-size:20px;
+    margin-left: 0px;
+  }
+  .texto > p{
+  font-size: 16px;
+  }
+.grid-container {
+  height:100vh;
+}
+.border {
+  height:100vh;
+}
+.grid-container2 {
+  height:100vh;
+}
+.pixel61 > h2{
+  font-size:15px;
+  margin-left: -7px;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .border {
+    width:800px;
+  }
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .main-container > .border:first-child{
+    margin-right:40px;
+    margin-bottom:0;
+  }
+  .border {
+    width:600px;
+  }
+
+}
+
+@media only screen and (min-width: 1700px) {
+  .border {
+    width:700px;
+  }
+
+}
+}
